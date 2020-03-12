@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, , maximum-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="Description" content="stylish, 男裝, 女裝, 配件" />
+    <meta property="og:image" content="https://api.appworks-school.tw/imgs/logo.png">
+    <link rel="icon" href="favicon.ico" sizes="64X64" type="image/png">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Ruei's STYLiSH</title>
+     <!-- Global site tag (gtag.js) - Google Analytics -->
+     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154956920-1"></script>
+     <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+ 
+         gtag('config', 'UA-154956920-1');
+     </script>
+</head>
+<body>
+    <div class="loadingWrap">
+        <div id="container">
+            <div id="loader"></div>  
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="main-header">
+            <div class="logo"><a href="#">STYLish</a></div>
+            <form action="" class="toggle-searchForm">
+                <label for="toggle-searchForm"><img src="./images/search.png" alt=""></label>
+                <input type="text" name="searchItem" id="toggle-searchInput">
+            </form>
+            <ul class="main-nav">
+                <li><a href="#" class="accessories">配件</a></li>
+                <li><a href="#" class="forMen">男裝</a></li>
+                <li><a href="#" class="forWomen">女裝</a></li>
+            </ul>
+            <ul class="customerArea">
+                <li class="cart"><a href="">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source srcset="./images/cart-mobile.png" media="(max-width: 900px)">
+                        <!--[if IE 9]></video><![endif]-->
+                        <img src="./images/cart.png" alt="">
+                    </picture>
+                    <input type="text" value="0" class="cartCount" readonly>
+                    購物車</a></li>
+                <li class="member"><a href="" class="profileImg">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source srcset="./images/member-mobile.png" media="(max-width: 900px)">
+                        <!--[if IE 9]></video><![endif]-->
+                        <img src="./images/member.png" alt="">
+                    </picture>
+                    會員</a></li>
+            </ul>
+            <form class="searchForm">
+                <button type="submit" class="searchBtn" for="searchForm"><img src="./images/search.png" alt=""></button>
+                <input type="text" id="searchInput">
+            </form>
+           
+        </div>
+        <div class="cart-content">
+            <div class="cartDetail">
+                <div class="mobile-cart">
+                </div>
+                <table class="desktop-cart">
+                    <thead>
+                        <tr>
+                            <th colspan="2" class="totalItemAmount"></th>
+                            <th>數量</th>
+                            <th>單價</th>
+                            <th>小計</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody class="desktop-cart-tbody"></tbody>
+                    </tbody>
+                </table>
+            </div>
+            <form class="deliveryInfo">
+                <label for="deliveryCountry">配送國家</label>
+                <select name="deliveryCountry" id="deliveryCountry">
+                    <option value="mainLand">台灣本島</option>
+                    <option value="offshoreIsland">離島</option>
+
+                </select>
+                <label for="payment">付款方式</label>
+                <select name="payment" id="payment">
+                    <option value="credit_card">線上刷卡</option>
+                    <option value="delivery">宅配貨到付款</option>
+                    <option value="711">7-11超商取貨付款</option>
+                    <option value="familyPort">全家超商取貨付款</option>
+                </select>
+            </form>
+            <div class="remind">
+                <p>※提醒您：</p>
+                <ul>
+                    <li>選擇宅配 - 請填寫正確收件人資訊，避免包裹配送不達</li>
+                    <li>選擇超商 - 請填寫正確收件人姓名( 與證件相符 )，避免無法領取</li>
+                </ul>
+            </div>
+            <form class="recipientInfo">
+                <h3>訂購資料</h3>
+                <label for="recipientName">收件人姓名
+                    <input type="text" name="recipientName" id="recipientName" placeholder="Required Field">
+                </label>
+                <label for="recipientPhone">手機
+                    <input type="number" name="recipientPhone" id="recipientPhone" placeholder="Required Field">
+                    <p class="phoneHint">僅能輸入數字</p>
+                </label> 
+                <label for="recipientEmail">信箱
+                    <input type="text" name="recipientEmail" id="recipientEmail" placeholder="Required Field">
+                    <p class="emailHint">請輸入正確信箱格式</p>
+                </label>            
+                <label for="recipientAddress">地址
+                    <input type="text" name="recipientAddress" id="recipientAddress" placeholder="Required Field">
+                </label>
+                <label>配送時間</label>
+                    <input type="radio" name="recipientTime" id="recipientTime1" class="recipientTime" value="morning" ><label for="recipientTime1">08:00 - 12:00</label>
+                    <input type="radio" name="recipientTime" id="recipientTime2" class="recipientTime" value="afternoon" checked><label for="recipientTime2">14:00 - 18:00</label>
+                    <input type="radio" name="recipientTime" id="recipientTime3" class="recipientTime" value="notSpecify"><label for="recipientTime3">不指定</label>
+            </form>
+            <div class="creditCardInfo">
+                <h3>付款資料</h3>
+                <div class="creditCard">
+                    <p>信用卡號碼</p>
+                    <div class="tpfield" id="card-number"></div>
+                    <p class="card-number-hint">Required Field</p>
+                </div>
+                <div class="creditCard">
+                    <p>有效期限</p>
+                    <div class="tpfield" id="card-expiration-date"></div>
+                    <p class="card-expiration-date-hint">Required Field</p>
+                </div>
+                <div class="creditCard">
+                    <p>安全碼</p>
+                    <div class="tpfield" id="card-ccv"></div>
+                    <p class="card-ccv-hint">Required Field</p>
+                </div>
+            </div>
+            
+            
+            <table class="sum">
+                <tr>
+                    <th>總金額</th>
+                    <td class="allSubtotal">NT. <span></span></td>
+                </tr>
+                <tr>
+                    <th>運費</th>
+                    <td class="allFreight">NT. <span></span></td>
+                </tr>
+                <tr style="border-top: 2px solid #979797;">
+                    <th>應付金額</th>
+                    <td class="allTotal">NT. <span></span></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="padding: 10px 0;">
+                        <button class="confirmDetailBtn">確認付款</button>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+        <div class="footer">
+            <div class="container">
+                <ul class="infoList">
+                    <li><a href="#">關於 Stylish</a></li>
+                    <li><a href="#">服務條款</a></li>
+                    <li><a href="#">隱私政策</a></li>
+                    <li><a href="#">聯絡我們</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+                <ul class="link">
+                    <li><a href="#"><img src="./images/line.png" alt="" srcset=""></a></li>
+                    <li><a href="#"><img src="./images/twitter.png" alt="" srcset=""></a></li>
+                    <li><a href="#"><img src="./images/facebook.png" alt="" srcset=""></a></li>
+                    <p>&copy; 2018 All rights reserved.</p>
+                </ul>
+
+                       
+            </div>
+           
+        </div>
+    </div>
+<script src="https://js.tappaysdk.com/tpdirect/v4"></script>
+<script src="./js/all.js"></script>
+<script src="./js/cart.js"></script>
+<script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
+<!-- FireBase -->
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBM5up3uDjtZm4VwKuE2jO5OqOqioK4xes",
+    authDomain: "ruei-s.firebaseapp.com",
+    databaseURL: "https://ruei-s.firebaseio.com",
+    projectId: "ruei-s",
+    storageBucket: "ruei-s.appspot.com",
+    messagingSenderId: "416250037813",
+    appId: "1:416250037813:web:6c942f4dbda56d0dff137c",
+    measurementId: "G-Z1C6RN8M3X"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+</body>
+</html>

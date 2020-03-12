@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, , maximum-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="Description" content="stylish, 男裝, 女裝, 配件" />
+    <meta property="og:image" content="https://api.appworks-school.tw/imgs/logo.png">
+    <link rel="icon" href="favicon.ico" sizes="64X64" type="image/png">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Ruei's STYLiSH</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154956920-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-154956920-1');
+    </script>
+    
+</head>
+<body>
+    
+    <div class="wrap">
+        <div class="main-header">
+            <div class="logo"><a href="#">STYLish</a></div>
+            <form action="" class="toggle-searchForm">
+                <label for="toggle-searchForm"><img src="./images/search.png" alt=""></label>
+                <input type="text" name="searchItem" id="toggle-searchInput">
+            </form>
+            <ul class="main-nav">
+                <li><a href="#" class="accessories">配件</a></li>
+                <li><a href="#" class="forMen">男裝</a></li>
+                <li><a href="#" class="forWomen">女裝</a></li>
+            </ul>
+            <ul class="customerArea">
+                <li class="cart"><a href="">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source srcset="./images/cart-mobile.png" media="(max-width: 900px)">
+                        <!--[if IE 9]></video><![endif]-->
+                        <img src="./images/cart.png" alt="">
+                    </picture>
+                    <input type="text" value="0" class="cartCount" readonly>
+                    購物車</a></li>
+                <li class="member"><a href="" class="profileImg">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source srcset="./images/member-mobile.png" media="(max-width: 900px)">
+                        <!--[if IE 9]></video><![endif]-->
+                        <img src="./images/member.png" alt="">
+                    </picture>
+                    會員</a></li>
+            </ul>
+            <form class="searchForm">
+                <button type="submit" class="searchBtn" for="searchForm"><img src="./images/search.png" alt=""></button>
+                <input type="text" id="searchInput">
+            </form>
+           
+        </div>
+        <div class="key-visual"></div>
+        
+        <div class="main-content"></div>
+        <div class="footer">
+            <div class="container">
+                <ul class="infoList">
+                    <li><a href="#">關於 Stylish</a></li>
+                    <li><a href="#">服務條款</a></li>
+                    <li><a href="#">隱私政策</a></li>
+                    <li><a href="#">聯絡我們</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+                <ul class="link">
+                    <li><a href="#"><img src="./images/line.png" alt="" srcset=""></a></li>
+                    <li><a href="#"><img src="./images/twitter.png" alt="" srcset=""></a></li>
+                    <li><a href="#"><img src="./images/facebook.png" alt="" srcset=""></a></li>
+                    <p>&copy; 2018 All rights reserved.</p>
+                </ul>
+
+                       
+            </div>
+           
+        </div>
+    </div>
+
+<script src="./js/all.js"></script>
+<script src="./js/index.js"></script>
+<!-- FireBase -->
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBM5up3uDjtZm4VwKuE2jO5OqOqioK4xes",
+    authDomain: "ruei-s.firebaseapp.com",
+    databaseURL: "https://ruei-s.firebaseio.com",
+    projectId: "ruei-s",
+    storageBucket: "ruei-s.appspot.com",
+    messagingSenderId: "416250037813",
+    appId: "1:416250037813:web:6c942f4dbda56d0dff137c",
+    measurementId: "G-Z1C6RN8M3X"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+</body>
+</html>

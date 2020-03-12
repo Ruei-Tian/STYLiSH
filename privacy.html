@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, , maximum-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="Description" content="stylish, 男裝, 女裝, 配件" />
+    <meta property="og:image" content="https://api.appworks-school.tw/imgs/logo.png">
+    <link rel="icon" href="favicon.ico" sizes="64X64" type="image/png">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Ruei's STYLiSH</title>
+</head>
+<body>
+    
+    <div class="wrap">
+        <div class="main-header">
+            <div class="logo"><a href="#">STYLish</a></div>
+            <form action="" class="toggle-searchForm">
+                <label for="toggle-searchForm"><img src="./images/search.png" alt=""></label>
+                <input type="text" name="searchItem" id="toggle-searchInput">
+            </form>
+            <ul class="main-nav">
+                <li><a href="#" class="accessories">配件</a></li>
+                <li><a href="#" class="forMen">男裝</a></li>
+                <li><a href="#" class="forWomen">女裝</a></li>
+            </ul>
+            <ul class="customerArea">
+                <li class="cart"><a href="">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source srcset="./images/cart-mobile.png" media="(max-width: 900px)">
+                        <!--[if IE 9]></video><![endif]-->
+                        <img src="./images/cart.png" alt="">
+                    </picture>
+                    <input type="text" value="0" class="cartCount" readonly>
+                    購物車</a></li>
+                <li class="member"><a href="" class="profileImg">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source srcset="./images/member-mobile.png" media="(max-width: 900px)">
+                        <!--[if IE 9]></video><![endif]-->
+                        <img src="./images/member.png" alt="">
+                    </picture>
+                    會員</a></li>
+            </ul>
+            <form class="searchForm">
+                <button type="submit" class="searchBtn" for="searchForm"><img src="./images/search.png" alt=""></button>
+                <input type="text" id="searchInput">
+            </form>
+           
+        </div>
+        
+        <article class="privacy-content">
+            <h2>一、個人資料蒐集之運用政策</h2>
+            <p>1. 本站不會在未明確告知的情況下，收集您的任何個人資料。</p>
+            <p>2. 一般瀏覽：伺服器會自行記錄相關行徑，包括您使用連線設備的IP位址、使用時間、使用的瀏覽器、瀏覽及點選資料記錄等，此記錄為內部應用，決不對外公佈。</p>
+            <p>3. 線上活動：使用者拜訪本站時，所有資料將受到個資保護，例如加入會員中心時所填寫之個人資料。</p>
+            <p>4. 意見反映：使用者用聯絡表單回覆時，本站會收集使用者之 email 帳號，以便回信給使用者。</p>
+            <p>5. 本站不會售出或借出使用者之個人資料，除非使用者同意，不會提供資料給其他人士或公司。</p>
+            
+            <h2>二、與第三者共用個人資料之政策</h2>
+            <p>本站絕不會任意出售、出租、交換…等任何您的個人資料給其他團體或個人，但下開狀況，將依相關法令處理您的個人資料，這些狀況包括（但不限於）：</p>
+            <p>1.司法單位透過合法程序要求本站交付個人資料時，本站將視司法單位適法性及是否遵照法定之程序，以及對本站所有使用者安全考量，採行必要配合措施。</p>
+            <p>2.當您在本站的行為可能損害或妨礙本站權益或導致其他人遭受損害，經研判揭露您的個人資料是為了辨識、聯絡或採取法律行動所必要時。</p>
+            
+            <h2>三、網站對外的相關連結</h2>
+            <p>本站的網頁提供其他網站的網路連結，您也可經由本站所提供的連結，點選進入其他網站。但該連結網站不一定適用於本站的隱私權保護政策，您必須參考該連結網站中的隱私權保護政策。</p>
+            <h2>四、個人資料暨隱私權保護諮詢</h2>
+            <p>如果您對於本站的隱私權保護政策，或是有個人資料收集、運用、更新等問題，請前往「聯絡站長」，或來信至本站信箱 wayne@wfublog.com。</p>
+            
+            
+        </article>
+        <div class="footer">
+            <div class="container">
+                <ul class="infoList">
+                    <li><a href="#">關於 Stylish</a></li>
+                    <li><a href="#">服務條款</a></li>
+                    <li><a href="#">隱私政策</a></li>
+                    <li><a href="#">聯絡我們</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+                <ul class="link">
+                    <li><a href="#"><img src="./images/line.png" alt="" srcset=""></a></li>
+                    <li><a href="#"><img src="./images/twitter.png" alt="" srcset=""></a></li>
+                    <li><a href="#"><img src="./images/facebook.png" alt="" srcset=""></a></li>
+                    <p>&copy; 2018 All rights reserved.</p>
+                </ul>
+
+                       
+            </div>
+           
+        </div>
+    </div>
+
+<script src="./js/all.js"></script>
+<!-- FireBase -->
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBM5up3uDjtZm4VwKuE2jO5OqOqioK4xes",
+    authDomain: "ruei-s.firebaseapp.com",
+    databaseURL: "https://ruei-s.firebaseio.com",
+    projectId: "ruei-s",
+    storageBucket: "ruei-s.appspot.com",
+    messagingSenderId: "416250037813",
+    appId: "1:416250037813:web:6c942f4dbda56d0dff137c",
+    measurementId: "G-Z1C6RN8M3X"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+</body>
+</html>
